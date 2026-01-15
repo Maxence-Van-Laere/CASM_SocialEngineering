@@ -1,0 +1,45 @@
+{
+  "structural_features": {
+    "avg_sentence_len": 21.18,
+    "lexical_diversity": 0.47,
+    "exclam_density": 0.12,
+    "question_density": 0.18,
+    "caps_ratio": 0.038,
+    "emoji_density": 0.65,
+    "hashtag_density": 0.0
+  },
+  "pronominal_markers": {
+    "ratio_self": 0.0,
+    "ratio_group": 0.01,
+    "ratio_other": 0.008
+  },
+  "semantic_orientation": {
+    "imperative_ratio": 0.013,
+    "imperative_hits": 1,
+    "help_seeking": 0.001,
+    "conflict_intensity": 0.0,
+    "tech_jargon_density": 0.001,
+    "materialism_focus": 0.0,
+    "absolutism_ratio": 0.003,
+    "hedging_ratio": 0.0
+  },
+  "cognitive_style": {
+    "temporal_focus": "present",
+    "emotion_intensity": 0.186,
+    "emotion_rules": 0.186,
+    "emotion_ml": 0.0
+  },
+  "vulnerability_triggers": {
+    "urgency_score": 0.002,
+    "authority_score": 0.001,
+    "fear_score": 0.0,
+    "fear_rule": 0.0,
+    "fear_ml": 0.0,
+    "social_proof_score": 0.01,
+    "ml_emotions": null,
+    "synergy": {
+      "auth_urg": 0,
+      "fear_urg": 0
+    }
+  }
+}

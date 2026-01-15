@@ -1,0 +1,9 @@
+Flask
+transformers
+pandas
+requests
+openai
+python-dotenv
+Mastodon.py
+atproto
+regex

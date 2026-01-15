@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CASM - Cognitive Attack Surface Mapper</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h3>⚙️ Paramètres</h3>
+      <label for="network">Réseau social :</label>
+      <select id="network">
+        <option>Mastodon</option>
+        <option>Bluesky</option>
+        <option>Twitter (simulé)</option>
+      </select>
+
+      <label for="identifier">Identifiant public :</label>
+      <input id="identifier" placeholder="ex : identifiant.exemple" />
+
+      
+
+      <div class="actions">
+        <button id="analyzeBtn">Analyser les biais cognitifs</button>
+      </div>
+
+      <hr />
+      <h4>🕒 Historique des analyses</h4>
+      <div id="history" class="history">
+        <p class="muted">Aucune analyse enregistrée.</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="hero">
+        <h1>CASM - Détecteur de Biais Cognitifs</h1>
+        <p>Cet outil analyse les messages publics d'un utilisateur sur les réseaux sociaux pour détecter des <strong>biais cognitifs</strong> et identifier des <strong>leviers de manipulation</strong> potentiels.</p>
+      </header>
+
+      <section id="resultsSection" class="card hidden">
+        <div id="status" class="status"></div>
+
+        <div id="tableWrap" class="card">
+          <!-- Le tableau des messages bruts a été retiré ; cet élément sert de conteneur
+               pour l'affichage du `final_report.json` et du `schema.json`. -->
+        </div>
+
+        <div class="row">
+          <div class="card col">
+            <h3>📊 Répartition des biais</h3>
+            <canvas id="biasChart" width="400" height="200"></canvas>
+          </div>
+
+          <div class="col">
+            <div class="card small">
+              <h3>⚠️ Évaluation de vulnérabilité</h3>
+              <div id="vulnerability"></div>
+            </div>
+            <div class="card small">
+              <h3>🎯 Scénarios d'attaque</h3>
+              <div id="scenarios"></div>
+            </div>
+            <div class="card small">
+              <h3>🛡️ Contre-mesures recommandées</h3>
+              <div id="countermeasures"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+    <!-- Error modal -->
+    <div id="errorModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Erreur</h3>
+        <p id="errorMsg">Une erreur est survenue.</p>
+        <div class="modal-actions">
+          <button id="closeError">Fermer</button>
+        </div>
+      </div>
+    </div>
+    <!-- Confirm modal -->
+    <div id="confirmModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>Confirmation</h3>
+        <p id="confirmMsg">Confirmez l'action.</p>
+        <div class="modal-actions">
+          <button id="cancelConfirm">Annuler</button>
+          <button id="confirmYes">Supprimer</button>
+        </div>
+      </div>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>

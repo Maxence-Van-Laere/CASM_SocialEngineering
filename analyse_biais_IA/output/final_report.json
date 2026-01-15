@@ -1,0 +1,17 @@
+{
+  "analysis": {
+    "persona_detected": "Le Multitâche Débordé",
+    "confidence_score": 90,
+    "metric_evidence": "Une faible longueur de phrase (21.18) et une diversité lexicale limitée (0.47) indiquent un profil de surcharge cognitive. L'intensité émotionnelle modérée (0.186) et l'absence de focus temporel spécifique confirment cette tendance.",
+    "psychological_profile": "La cible semble submergée par des tâches multiples, prenant des décisions rapides sans analyse approfondie.",
+    "vulnerability_assessment": {
+      "primary_weakness": "Surcharge cognitive et propension à la réactivité immédiate",
+      "risk_level": "Medium"
+    },
+    "exploit_scenario": "Envoyer des demandes d'action immédiate avec une urgence manufacturée, fragmenter davantage son attention avec des notifications synchronisées pour induire des erreurs.",
+    "defensive_countermeasure": {
+      "strategy": "Hygiène Numérique et gestion des interruptions",
+      "action_plan": "Recommander des pauses régulières pour confirmer les actions, limiter les notifications et fournir des checklists pour les tâches sensibles."
+    }
+  }
+}
