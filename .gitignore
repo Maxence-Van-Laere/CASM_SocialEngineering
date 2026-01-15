@@ -1,4 +1,6 @@
 /test/
+/historique_resultat_analyse/
+
 .env
 **/__pycache__/
 .vscode/
